@@ -44,6 +44,10 @@
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
+      <input type="text" value="First name" /> <input type="text" value="Last name" /><br>
+      <input type="text" value="Mobile number or email" /><br>
+      <input type="text" value="Re-enter mobile number or email" />
+
       <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true %>
