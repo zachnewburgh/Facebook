@@ -1,29 +1,72 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class="splash-container">
+  <div class="splash-left">
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <h3>Connect with friends and the<br>
+    world around you on Facebook.</h3>   
+
+    <table>
+      <tr>
+        <td>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/t39.2365-6/851565_602269956474188_918638970_n.png" alt="feed" />
+        </td>
+        <td>
+          <span><strong>See photos and updates</strong>  from friends in News Feed.</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/t39.2365-6/851585_216271631855613_2121533625_n.png" alt="new post" />
+        </td>
+        <td>
+          <span><strong>Share what's new</strong>  in your life on your Timeline.</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="https://scontent-lga3-1.xx.fbcdn.net/t39.2365-6/851558_160351450817973_1678868765_n.png" alt="search">
+        </td>
+        <td>
+          <span><strong>Find more</strong>  of what you're looking for with Facebook Search.</span>
+        </td>
+      </tr>
+    </table>    
+
   </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+  <div class="splash-right">
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
+    <h1>Sign up</h1>
+    <h4>It's free and always will be.</h4>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
 
-<%= render "devise/shared/links" %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
