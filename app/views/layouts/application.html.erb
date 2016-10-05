@@ -8,8 +8,16 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+<!--     <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p> -->
+
+    <div class="navbar">
+      <%= image_tag("logo-text.png") %>
+
+      <input id="email" type="text" value="Email"> 
+      <input id="password" type="text" value="*********"> 
+      <input id="login" type="submit" value="Log in"/>
+    </div>
     
     <%= yield %>
   </body>
