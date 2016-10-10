@@ -12,11 +12,28 @@
     <p class="alert"><%= alert %></p> -->
 
     <div class="navbar">
-      <%= image_tag("logo-text.png") %>
+      <img src="/assets/logo-text.png" alt="logo">
 
-      <input id="email" type="text" value="Email"> 
-      <input id="password" type="text" value="*********"> 
-      <input id="login" type="submit" value="Log in"/>
+          <table>
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <tr>
+              <td>Email or Phone</td>
+              <td class="password">Password</td>
+            </tr>
+            <tr>
+              <td><%= f.email_field :email, autofocus: true %></td>
+              <td class="password"><%= f.password_field :password, autocomplete: "off" %></td>
+              <td class="button"><%= f.submit "Log in" %></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="password">Forgot account?</td>
+              <td></td>
+            </tr>
+          </table>     
+
+      <% end %>
+
     </div>
     
     <%= yield %>
