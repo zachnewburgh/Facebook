@@ -17,10 +17,47 @@
 body {
   font-family: "Lucida Grande";
   background-color: #EBEFF5;
+  margin: 0;
+}
+
+div.navbar {
+  min-height: 70px;
+  padding-top: 20px;
+  padding-left: 11%;
+  background-color: #3b5998; 
+}
+
+.navbar img {
+  margin-left: 3.5%;
+  padding-bottom: 1.75%;
+}
+
+.navbar table {
+  display: inline-block;
+  color: white;
+  font-size: 0.75em;
+  margin-left: 430px;
+}
+
+.navbar input {
+ width: 140px;
+}
+
+.navbar td.button input {
+  margin-left: 12.5px;
+  width: 50px;
+  background: #3e65b7;
+  border: 1px solid #415068;
+  color: white;
+  font-size: 12px;
+}
+
+.navbar td.password {
+  padding-left: 12.5px;
 }
 
 div.splash-container {
-  padding-left: 13.5%;
+  padding-left: 12.5%;
 }
 
 div.splash-left {
@@ -31,10 +68,15 @@ div.splash-left {
 .splash-left h3 {
   font-size: 1.66em;
   margin-top: 55px;
+  padding-bottom: 20px;
 }
 
 .splash-left img {
   margin-right: 1em;
+}
+
+.splash-left td {
+  padding-bottom: 25px;
 }
 
 .splash-left span {
@@ -54,4 +96,136 @@ div.splash-right {
 .splash-right h4 {
   margin-top: 2.5px;
   font-weight: 100;
+}
+
+.field input {
+    color: #999;
+    font-family: "Helvetica";
+    font-size: 18px;
+    height: 21px;
+    width: 377px;
+    padding-top: 8px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.field input#user_first_name {
+  display: inline;
+  width: 169px;
+  margin-right: 4px;
+}
+.field input#user_last_name {
+  display: inline;
+  margin-left: 4px;
+  width: 169px;
+}
+
+#birthday {
+  margin: 5px;
+  font-size: 18px
+}
+
+#birthday div {
+  display: inline-block;
+  padding: 10px;
+  line-height: 10px
+}
+
+select {
+  margin: 5px;
+}
+
+select#user_birth_date_2i {
+  margin: 1px;
+  border: 1px solid #111;
+  background: transparent;
+  width: 58px;
+  padding: 5px 35px 5px 5px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  height: 28px;
+  appearance: none;
+  background: url(/assets/arrow-select) 96% / 5% no-repeat #eee;
+}
+
+select#user_birth_date_3i {
+  margin: 1px;
+  border: 1px solid #111;
+  background: transparent;
+  width: 47px;
+  padding: 5px 35px 5px 5px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  height: 28px;
+  appearance: none;
+  background: url(/assets/arrow-select) 96% / 5% no-repeat #eee;
+} 
+
+select#user_birth_date_1i {
+  margin: 1px;
+  border: 1px solid #111;
+  background: transparent;
+  width: 54px;
+  padding: 5px 35px 5px 5px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  height: 28px;
+  appearance: none;
+  background: url(/assets/arrow-select) 96% / 5% no-repeat #eee;
+} 
+
+div#sex.field {
+  margin: 10px;
+  font-size: 18px;
+  text-align: middle;
+}
+
+#sex.field input[name=sex] {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  border-bottom: 50px;
+}
+
+.field a:link {
+  font-size: 10px;
+  color: #365899;
+  text-decoration: none;
+}
+
+.field a:hover {
+  text-decoration: underline;
+}
+
+#disclaimer {
+  font-size: 10px;
+  padding-bottom: 15px;
+}
+
+#disclaimer a:link {
+  color: #365899;
+  text-decoration: none;
+}
+
+#disclaimer a:hover {
+  text-decoration: underline;
+}
+
+div.actions input[type=submit] {
+  background: #69a74e;
+  border-radius: 5px;
+  font-family: "Freight Sans Bold", helvetica, arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  text-shadow: 1px 1px black;
+  height: 39px;
+  width: 194px;
+  padding: 7px 20px 7px 20px;
+  margin: 5px;
 }
