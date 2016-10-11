@@ -1,26 +1,90 @@
-<h2>Log in</h2>
+<div class="splash-container">
+  <div class="splash-left">
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label "Email" %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <h3>Connect with friends and the<br>
+    world around you on Facebook.</h3>   
+
+    <table>
+      <tr>
+        <td>
+          <img src="/assets/newsfeed.png" alt="feed" />
+        </td>
+        <td>
+          <span><strong>See photos and updates</strong>  from friends in News Feed.</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="/assets/post.png" alt="new post" />
+        </td>
+        <td>
+          <span><strong>Share what's new</strong>  in your life on your Timeline.</span>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <img src="/assets/search.png" alt="search">
+        </td>
+        <td>
+          <span><strong>Find more</strong>  of what you're looking for with Facebook Search.</span>
+        </td>
+      </tr>
+    </table>    
+
   </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+  <div class="splash-right">
+
+    <h1>Sign up</h1>
+    <h4>It's free and always will be.</h4>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.text_field :first_name, :value => "First Name" %>
+        <%= f.text_field :last_name, :value => "Last Name" %>
+      </div>
+
+      <div class="field">
+        <%= f.email_field :email, :value => "Mobile number or email" %>
+      </div>
+
+      <div class="field">
+        <%= f.text_field :email_confirmation, :value => "Re-enter mobile number or email" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <div class="field" id="birthday">
+       <%= f.label :birth_date, "Birthday" %><br>
+       <%= f.date_select :birth_date, start_year: 1905, order: [:month, :day, :year], use_short_month: true, 
+                          prompt: {month: 'Month', day: 'Day', year: 'Year'} %>
+       <span>
+         <div>
+            <a href="#">Why do I need to provide my <br>birthday?</a>
+          </div>
+       </span>
+      </div>
+
+      <div class="field" id="sex">
+        <input type="radio" name="sex" value="female"> Female
+        <input type="radio" name="sex" value="male"> Male
+      </div>
+
+      <div id="disclaimer">
+        By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms">Terms</a> and that you have<br>
+        read our <a href="https://www.facebook.com/about/privacy">Data Policy</a>, including our <a href="https://www.facebook.com/policies/cookies/">Cookie Use</a>.
+      </div>
+
+
+      <div class="actions">
+        <%= f.submit "Sign Up" %>
+      </div>
+    <% end %>
   </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
