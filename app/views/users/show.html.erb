@@ -1,1 +1,39 @@
-<%= @user.attributes %>
+<div class="profile-container">
+  <div class="profile-header">
+    <div class="cover-photo">
+      <img src="http://placehold.it/851x315">
+    </div>
+
+    <div class="profile-picture" style="position: absolute; top: 270px; left: 15px;">
+      <img src="http://placehold.it/168x168">
+    </div>
+
+    <div class="profile-name" style="position: absolute; left: 200px; top: 365px; z-index: 10; color: white; font-size: 1.5em; text-shadow: 0.25px 0.25px black">
+      <%= "#{@user.first_name} #{@user.last_name}" %>
+    </div>
+
+    <div class="profile-navbar" style="position: absolute; background-color: white; padding: 10px 158px 10px 10px; z-index: -1;">
+      <table>
+        <tr>
+          <td style="width: 182px;">
+          </td>
+          <td style="padding-left: 20px; padding-right: 20px; border-left: 1px solid #e3e6ea; border-right: 1px solid #e3e6ea;">
+            <a href="#" style="text-decoration: none; color: #365899; font-weight: bold;">Timeline</a>
+          </td>
+          <td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e3e6ea;">
+            <a href="#" style="text-decoration: none; color: #365899; font-weight: bold;">About</a>
+          </td>
+          <td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e3e6ea;">
+            <a href="#" style="text-decoration: none; color: #365899; font-weight: bold;">Friends</a>
+          </td>
+          <td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e3e6ea;">
+            <a href="#" style="text-decoration: none; color: #365899; font-weight: bold;">Photos</a>
+          </td>
+          <td style="padding-left: 20px; padding-right: 20px; border-right: 1px solid #e3e6ea;">
+            <a href="#" style="text-decoration: none; color: #365899; font-weight: bold;">More</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
