@@ -13,7 +13,11 @@
 
     <div class="navbar">
       <img src="/assets/logo-text.png" alt="logo">
-
+      <% if user_signed_in? %>
+        <li>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+        </li>
+      <% else %>
           <table>
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
             <tr>
@@ -31,7 +35,7 @@
               <td></td>
             </tr>
           </table>     
-
+        <% end %>
       <% end %>
 
     </div>
