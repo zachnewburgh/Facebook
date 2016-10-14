@@ -11,13 +11,30 @@
 <!--     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p> -->
 
-    <div class="navbar">
-      <img src="/assets/logo-text.png" alt="logo">
+    
       <% if user_signed_in? %>
-        <li>
-          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
-        </li>
+        <div class="navbar-authenticated">
+          <table>
+            <tr>
+              <td><img style="padding: 6px 2px 4px 90px;" src="assets/logo-icon.png" /></td>
+              <td>
+                <input type="text" value="Search Facebook" style="font-size: 14px; font-family: helvetica; color: #4b4f56; width: 393px; height: 17px; border: 2px 0px 2px 2px;" onfocus="this.value='';" onblur="this.value==='' ? this.value = 'Search Facebook' : ''"/><div style="display: inline-block; background-color: #f7f9fc; padding-right: 16px; padding-left: 16px; height: 19px; padding-top: 4px; padding-bottom: 0px; vertical-align: middle;"><img src="assets/magnifying-glass"/></div>
+              </td>
+              <td><img style="margin-left: 155px;" src="http://placehold.it/24x24"></td>
+              <td style="color: white; font-family: helvetica; font-size: 12px;"><%= current_user.first_name %></td>
+              <td style="color: white; font-family: helvetica; font-size: 12px; padding-left: 20px;">Home <span style="background-color: #1F1F69; font-size: 10px;"> 11 </span></td>
+              <td style="padding-left: 37px; padding-top: 5px"><img src="assets/friends-blue.png" /></td>
+              <td style="padding-left: 8px; padding-top: 5px"><img src="assets/messages.png" /></td>
+              <td style="padding-left: 10px; padding-top: 5px"><img src="assets/globe.png" /></td>
+              <td style="padding-left: 34px; padding-top: 0px"><img src="assets/privacy.png" /></td>
+              <td style="padding-left: 8px; padding-top: 0px"><img src="assets/down-arrow.png" /></td>
+          </table>
+
+          <%#= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+        </div>
       <% else %>
+        <div class="navbar-signin">
+          <img src="/assets/logo-text.png" alt="logo">
           <table>
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
             <tr>

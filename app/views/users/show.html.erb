@@ -4,11 +4,11 @@
       <img src="http://placehold.it/851x315">
     </div>
 
-    <div class="profile-picture" style="position: absolute; top: 270px; left: 105px;">
+    <div class="profile-picture" style="position: absolute; top: 220px; left: 105px;">
       <img src="http://placehold.it/168x168">
     </div>
 
-    <div class="profile-name" style="position: absolute; left: 288px; top: 365px; z-index: 10; color: white; font-size: 1.5em; text-shadow: 0.25px 0.25px black">
+    <div class="profile-name" style="position: absolute; left: 288px; top: 315px; z-index: 10; color: white; font-size: 1.5em; text-shadow: 0.25px 0.25px black">
       <%= "#{@user.first_name} #{@user.last_name}" %>
     </div>
 
@@ -37,7 +37,7 @@
     </div>
   </div>
 
-  <div class="profile-left" style="position: absolute; top: 475px; width: 345px; background-color: white; font-family: helvetica; font-size: 12px;">
+  <div class="profile-left" style="position: absolute; top: 425px; width: 345px; background-color: white; font-family: helvetica; font-size: 12px;">
     <div class="intro-title" style="font-size: 16px; margin-left: 3%; padding-top: 15px; vertical-align: middle;">
       <table>
         <tr>
@@ -96,7 +96,7 @@
     </div>
   </div>
 
-  <div class="profile-status-update" style="width: 490px; height: 150px; position: absolute; top: 475px; left: 453px; background-color: white;">
+  <div class="profile-status-update" style="width: 490px; height: 150px; position: absolute; top: 425px; left: 453px; background-color: white;">
     <table style="font-size: 12px; font-family: helvetica; font-weight: bold; background-color: #f7f9fc; width: 490px">
       <tr>
         <td style="padding-top: 1%; padding-left: 2%; padding-bottom: 1%;"><img src="assets/status.png" /> Status</td>
@@ -136,37 +136,37 @@
           <td style="width: 42px"><img src="http://placehold.it/40x40"></td>
           <td style="font-size: 14px; font-family: helvetica; font-weight: bold;">
             <a href="#" style="text-decoration: none;">Zach Newburgh</a><br>
-            <span style="font-size: 12px; color: #4b4f56; font-weight: 100;">September at 12:34am· <img src="assets/post-clock.png" /> · <img src="assets/post-globe.png" /></span>
+            <span style="font-size: 12px; color: #4b4f56; font-weight: 100;">September 18 at 12:34am · <img src="assets/post-clock.png" /> · <img src="assets/post-globe.png" /></span>
           </td>
         </tr>
       </table>
       <table style="background-color: white; padding-bottom: 10px">
         <tr>
-          <td style="font-size: 14px; font-family: helvetica; width: 490px;">This is a post.</td>
+          <td style="font-size: 14px; font-family: helvetica; width: 490px; padding-top: 5px; padding-left: 5px;">This is a post.</td>
         </tr>
       </table>
-      <table style="background-color: white; width: 490px; font-family: helvetica; font-size: 12px; color: #4b4f56; font-weight: bold;">
+      <table style="background-color: white; width: 490px; font-family: helvetica; font-size: 12px; color: #4b4f56; font-weight: bold; border-top: 1px solid #e3e6ea; padding: 5px;">
         <tr>
-          <td style="padding-left: 10px; width: 75px;">
+          <td style="width: 15%; white-space: nowrap;">
             <img src="assets/like.png"/> Like
           </td>
-          <td style="width: 75px;">
+          <td style="width: 20%; white-space: nowrap;">
             <img src="assets/comment.png"/> Comment 
           </td>
-          <td style="width: 75px;">
+          <td style="width: 100%; white-space: nowrap;">
             <img src="assets/share.png"/> Share 
           </td>
-          <td style="width: 75px;"></td><td style="width: 75px;"></td><td style="width: 75px;"></td>
-<!--           <td>Comment</td>
-          <td>Share</td> -->
         </tr>
+      <table style="background-color: #f6f7f9; width: 490px; font-family: helvetica; font-size: 12px; color: #4b4f56; font-weight: bold; border: 1px solid #e3e6ea; border-bottom: none;">
         <tr>
-          <td>8</td>
+          <td style="width: 100%; padding-left: 5px; padding-top: 8px;"><img src="assets/post-like.png"/> You, Mookie Kideckel and 8 others</td>
         </tr>
       </table>
-      <table style="background-color: white; padding-bottom: 10px; width: 490px;">
+      </table>
+      <table style="background-color: #f6f7f9; padding-bottom: 10px; padding-top: 8px; width: 490px; border: 1px solid #e3e6ea; border-top: none;">
         <tr>
-          <td><img src="http://placehold.it/32x32"/> <input type="text" value="Write a comment" />
+          <td><img src="http://placehold.it/32x32"/></td>
+          <td><input style="color: #999; font-family: 'Helvetica'; font-size: 12px; height: 14px; width: 415px; padding-top: 5px; padding-right: 10px; padding-bottom: 8px; padding-left: 5px; margin: 5px;" type="text" value="Write a comment..." onfocus="this.value='';" onblur="this.value==='' ? this.value = 'Write a comment...' : ''"/>
         </td>
       </table>
     </div>
