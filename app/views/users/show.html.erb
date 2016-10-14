@@ -1,18 +1,18 @@
-<div class="profile-container">
+<div class="profile-container" style="padding-left: 6.5%;">
   <div class="profile-header">
     <div class="cover-photo">
       <img src="http://placehold.it/851x315">
     </div>
 
-    <div class="profile-picture" style="position: absolute; top: 270px; left: 15px;">
+    <div class="profile-picture" style="position: absolute; top: 270px; left: 105px;">
       <img src="http://placehold.it/168x168">
     </div>
 
-    <div class="profile-name" style="position: absolute; left: 200px; top: 365px; z-index: 10; color: white; font-size: 1.5em; text-shadow: 0.25px 0.25px black">
+    <div class="profile-name" style="position: absolute; left: 288px; top: 365px; z-index: 10; color: white; font-size: 1.5em; text-shadow: 0.25px 0.25px black">
       <%= "#{@user.first_name} #{@user.last_name}" %>
     </div>
 
-    <div class="profile-navbar" style="position: absolute; background-color: white; padding: 10px 158px 10px 10px; z-index: -1;">
+    <div class="profile-navbar" style="position: absolute; background-color: white; padding: 10px 155px 10px 10px; z-index: -1;">
       <table>
         <tr>
           <td style="width: 182px;">
@@ -35,5 +35,141 @@
         </tr>
       </table>
     </div>
+  </div>
+
+  <div class="profile-left" style="position: absolute; top: 475px; width: 345px; background-color: white; font-family: helvetica; font-size: 12px;">
+    <div class="intro-title" style="font-size: 16px; margin-left: 3%; padding-top: 15px; vertical-align: middle;">
+      <table>
+        <tr>
+          <td><img src="assets/intro.png" /></td>
+          <td>Intro</td>
+        </tr>
+      </table>
+    </div>
+    <div class="intro-description" style="margin: auto; padding-top: 15px; padding-bottom: 15px; width: 250px; text-align: center; vertical-align: middle; border-bottom: 1px solid #e3e6ea;">
+      coder, coffee drinker, political enthusiast, language addict.
+    </div>
+    
+    <div class="intro-jobs" style="margin-left: 3%; width: 250px;">
+      <table>
+        <tr>
+          <td><img src="assets/job.png" /></td>
+          <td style="padding-top: 12px; padding-left: 8px;">Former Director of Social Impact & Senior Community Director at IVY</td>
+        </tr>
+      </table> 
+    </div>
+
+    <div class="intro-schools" style="margin-left: 3%; width: 250px;">
+      <table>
+        <tr>
+          <td><img src="assets/school.png" /></td>
+          <td style="padding-top: 12px; padding-left: 8px;">Studied Ruby on Rails at The Flatiron School</td>
+        </tr>
+      </table> 
+    </div>
+
+    <div class="intro-location" style="margin-left: 3%; width: 250px;">
+      <table style="padding-top: 10px;">
+        <tr>
+          <td><img src="assets/home.png" /></td>
+          <td style="padding-left: 8px;">Lives in New York, New York</td>
+        </tr>
+      </table> 
+    </div>
+
+    <div class="intro-pronunciation" style="margin-left: 3%; width: 250px;">
+      <table style="padding-top: 10px;">
+        <tr>
+          <td><img src="assets/pronunciation.png" /></td>
+          <td style="padding-left: 8px;">Pronounces name ZAK NOO-berg</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="intro-followers" style="margin-left: 3%; width: 250px;">
+      <table style="padding-top: 10px;">
+        <tr>
+          <td><img src="assets/followers.png" /></td>
+          <td style="padding-left: 8px;">Followed by 210 people</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="profile-status-update" style="width: 490px; height: 150px; position: absolute; top: 475px; left: 453px; background-color: white;">
+    <table style="font-size: 12px; font-family: helvetica; font-weight: bold; background-color: #f7f9fc; width: 490px">
+      <tr>
+        <td style="padding-top: 1%; padding-left: 2%; padding-bottom: 1%;"><img src="assets/status.png" /> Status</td>
+        <td style="padding-top: 1%; padding-left: 2%; padding-bottom: 1%; border-left: 1px solid #e3e6ea;"><img src="assets/photo.png" /> Photo / Video</td>
+        <td style="padding-top: 1%; padding-left: 2%; padding-bottom: 1%; border-left: 1px solid #e3e6ea;"><img src="assets/life-event.png" /> Life Event</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <tr>
+    </table>
+
+    <div class="input">
+      <table style="border-bottom: 1px solid #e3e6ea;"> 
+        <tr>
+          <td><img src="http://placehold.it/40x40"></td>
+          <td><input type="text" value="What's on your mind?" style="padding-top: 30px; padding-bottom: 30px; width: 440px; font-size: 14px; color: #4b4f56; font-family: helvetica; border: none;"></td>
+        </tr>
+      </table>
+      <div class="final-options" style="margin-left: 63%;">
+        <div style="display: inline-block;">
+          <select style="height: 25px; width: 96px; background-color: #f7f9fc; font-weight: bold; font-family: helvetica;">
+            <option value="friends">Friends</option>
+            <option value="public">Public</option>
+            <option value="me">Only Me</option>
+          </select>
+        </div>
+        <div style="display: inline-block;">
+          <button value="post" style="height: 25px; width: 60px; background: #3e65b7; border: 1px solid #415068; color: white; font-size: 12px;">Post</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="post">
+      <table style="background-color: white; margin-top: 10px; width: 490px;">
+        <tr>
+          <td style="width: 42px"><img src="http://placehold.it/40x40"></td>
+          <td style="font-size: 14px; font-family: helvetica; font-weight: bold;">
+            <a href="#" style="text-decoration: none;">Zach Newburgh</a><br>
+            <span style="font-size: 12px; color: #4b4f56; font-weight: 100;">September at 12:34am· <img src="assets/post-clock.png" /> · <img src="assets/post-globe.png" /></span>
+          </td>
+        </tr>
+      </table>
+      <table style="background-color: white; padding-bottom: 10px">
+        <tr>
+          <td style="font-size: 14px; font-family: helvetica; width: 490px;">This is a post.</td>
+        </tr>
+      </table>
+      <table style="background-color: white; width: 490px; font-family: helvetica; font-size: 12px; color: #4b4f56; font-weight: bold;">
+        <tr>
+          <td style="padding-left: 10px; width: 75px;">
+            <img src="assets/like.png"/> Like
+          </td>
+          <td style="width: 75px;">
+            <img src="assets/comment.png"/> Comment 
+          </td>
+          <td style="width: 75px;">
+            <img src="assets/share.png"/> Share 
+          </td>
+          <td style="width: 75px;"></td><td style="width: 75px;"></td><td style="width: 75px;"></td>
+<!--           <td>Comment</td>
+          <td>Share</td> -->
+        </tr>
+        <tr>
+          <td>8</td>
+        </tr>
+      </table>
+      <table style="background-color: white; padding-bottom: 10px; width: 490px;">
+        <tr>
+          <td><img src="http://placehold.it/32x32"/> <input type="text" value="Write a comment" />
+        </td>
+      </table>
+    </div>
+
   </div>
 </div>
