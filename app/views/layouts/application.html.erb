@@ -27,7 +27,7 @@
               <td style="padding-left: 8px; padding-top: 5px"><img src="assets/messages.png" /></td>
               <td style="padding-left: 10px; padding-top: 5px"><img src="assets/globe.png" /></td>
               <td style="padding-left: 34px; padding-top: 0px"><img src="assets/privacy.png" /></td>
-              <td style="padding-left: 8px; padding-top: 0px"><img src="assets/down-arrow.png" /></td>
+              <td style="padding-left: 8px; padding-top: 0px"><%= link_to(raw("<img src='assets/down-arrow.png' />"), destroy_user_session_path, :method => :delete) %></td>
           </table>
 
           <%#= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
