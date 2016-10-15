@@ -113,7 +113,7 @@
       <table style="border-bottom: 1px solid #e3e6ea;"> 
         <tr>
           <td><img src="http://placehold.it/40x40"></td>
-          <td><input type="text" value="What's on your mind?" style="padding-top: 30px; padding-bottom: 30px; width: 440px; font-size: 14px; color: #4b4f56; font-family: helvetica; border: none;"></td>
+          <td><input type="text" value="What's on your mind?" onfocus="this.value='';" onblur="this.value==='' ? this.value = 'What\'s on your mind' : ''" style="padding-top: 30px; padding-bottom: 30px; width: 440px; font-size: 14px; color: #4b4f56; font-family: helvetica; border: none;"></td>
         </tr>
       </table>
       <div class="final-options" style="margin-left: 63%;">
