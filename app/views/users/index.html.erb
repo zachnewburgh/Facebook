@@ -1,2 +1,37 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<div style="margin: 0 20%; max-width: 30%; background-color: white;  margin-top: 10px; font-size: 12px; font-family: helvetica;">
+    <table style="font-size: 12px; font-family: helvetica; font-weight: bold; background-color: #f7f9fc; width: 490px">
+      <tr>
+        <td style="padding-top: 1%; padding-left: 2%; padding-bottom: 1%; padding-right: 1%;"><img src="assets/photo.png" /> Photo / Video</td>
+        <td style="padding-top: 1%; padding-left: 2%; padding-bottom: 1%; border-left: 1px solid #e3e6ea;"><img src="assets/album.png" /> Photo/Video Album</td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+      <tr>
+      <tr>
+    </table>
+</div>
+
+    <div class="input" style="margin: 0 20%; background-color: white;">
+      <table style="border-bottom: 1px solid #e3e6ea;"> 
+        <tr>
+          <td><img src="http://placehold.it/40x40"></td>
+          <td><input type="text" value="What's on your mind?" onfocus="this.value='';" onblur="this.value==='' ? this.value = 'What\'s on your mind' : ''" style="padding-top: 30px; padding-bottom: 30px; width: 430px; font-size: 14px; color: #4b4f56; font-family: helvetica; border: none;"></td>
+        </tr>
+      </table>
+      <div class="final-options" style="margin-left: 13%;">
+        <div style="display: inline-block;">
+          <select style="height: 25px; width: 96px; background-color: #f7f9fc; font-weight: bold; font-family: helvetica;">
+            <option value="friends">Friends</option>
+            <option value="public">Public</option>
+            <option value="me">Only Me</option>
+          </select>
+        </div>
+        <div style="display: inline-block;">
+          <button value="post" style="height: 25px; width: 60px; background: #3e65b7; border: 1px solid #415068; color: white; font-size: 12px;">Post</button>
+        </div>
+      </div>
+    </div>
+
+<%= @users.map {|u| u.first_name} %>
